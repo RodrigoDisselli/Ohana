@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .container {
     position: relative;
     width: 90%;
@@ -7,51 +11,60 @@
 .block {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
-.block .col {
+.block.mult-row {
+    flex-direction: column;
+}
+
+.block.mult-row > * {
+    height: 100%
+}
+
+.block > .col {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.block .col.center {
+.block > .col.center {
     flex-direction: column;
     align-items: center;
 }
 
-.block .col.right {
+.block > .col.right {
     flex-direction: row-reverse;
 }
 
-.block .col.order1 { order: 1; }
+.block > .col.order1 { order: 1; }
 
-.block .col.order2 { order: 2; }
+.block > .col.order2 { order: 2; }
 
-.block .col.order3 { order: 3; }
+.block > .col.order3 { order: 3; }
 
-.block .col.order4 { order: 4; }
+.block > .col.order4 { order: 4; }
 
-.block .col.order5 { order: 5; }
+.block > .col.order5 { order: 5; }
 
-.block .col.order6 { order: 6; }
+.block > .col.order6 { order: 6; }
 
-.block .col.order7 { order: 7; }
+.block > .col.order7 { order: 7; }
 
-.block .col.order8 { order: 8; }
+.block > .col.order8 { order: 8; }
 
-.block .col.order9 { order: 9; }
+.block > .col.order9 { order: 9; }
 
-.block .col.order10 { order: 10; }
+.block > .col.order10 { order: 10; }
 
-.block .col.order11 { order: 11; }
+.block > .col.order11 { order: 11; }
 
-.block .col.order12 { order: 12; }
+.block > .col.order12 { order: 12; }
 
-.block .col.order-start { order: -10;}
+.block > .col.order-start { order: -10;}
 
-.block .col.order-end { order: 100;}
+.block > .col.order-end { order: 100;}
 
 
 @media (max-width: 768px) {
@@ -60,39 +73,48 @@
         flex-direction: column;
     }
 
-    .block .col.mob-row{
+    .block > .block {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .block > .block.mob-col {
+        flex-direction: column;
+    }
+
+    .block > .col.mob-row{
         flex-direction: row;
     }
 
-    .block .col.mob-center{
+    .block > .col.mob-center{
         align-items: center;
     }
 
-    .block .col.mob-order1 { order: 1; }
+    .block > .col.mob-order1 { order: 1; }
 
-    .block .col.mob-order2 { order: 2; }
+    .block > .col.mob-order2 { order: 2; }
 
-    .block .col.mob-order3 { order: 3; }
+    .block > .col.mob-order3 { order: 3; }
 
-    .block .col.mob-order4 { order: 4; }
+    .block > .col.mob-order4 { order: 4; }
 
-    .block .col.mob-order5 { order: 5; }
+    .block > .col.mob-order5 { order: 5; }
 
-    .block .col.mob-order6 { order: 6; }
+    .block > .col.mob-order6 { order: 6; }
 
-    .block .col.mob-order7 { order: 7; }
+    .block > .col.mob-order7 { order: 7; }
 
-    .block .col.mob-order8 { order: 8; }
+    .block > .col.mob-order8 { order: 8; }
 
-    .block .col.mob-order9 { order: 9; }
+    .block > .col.mob-order9 { order: 9; }
 
-    .block .col.mob-order10 { order: 10; }
+    .block > .col.mob-order10 { order: 10; }
 
-    .block .col.mob-order11 { order: 11; }
+    .block > .col.mob-order11 { order: 11; }
 
-    .block .col.mob-order12 { order: 12; }
+    .block > .col.mob-order12 { order: 12; }
 
-    .block .col.mob-order-start { order: -10;}
+    .block > .col.mob-order-start { order: -10;}
 
-    .block .col.mob-order-end { order: 15;}
+    .block > .col.mob-order-end { order: 15;}
 }
