@@ -1,0 +1,11 @@
+button, button:hover, button:focus , button:after, button:active{
+	border: none;
+	padding: 8px 25px 8px 25px;
+    font: inherit;
+    font-weight: 600;
+	cursor: pointer;
+    outline: inherit;
+
+    border: 1px solid #C1C1C1;
+    border-radius: 4px;
+}
