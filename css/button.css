@@ -1,11 +1,18 @@
 button, button:hover, button:focus , button:after, button:active{
 	border: none;
-	padding: 8px 25px 8px 25px;
+	padding: 5px 25px 8px 25px;
     font: inherit;
-    font-weight: 600;
 	cursor: pointer;
     outline: inherit;
-
+    font-weight: 400;
     border: 1px solid #C1C1C1;
     border-radius: 4px;
+}
+
+button.small {
+    padding: 6px 12px 3px;
+}
+
+button.large {
+    padding: 12px 32px 9px;
 }
