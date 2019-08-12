@@ -73,7 +73,7 @@ body{
         flex-direction: column;
     } 
 
-    .block > .block {
+    .block > .col >.block.mob-no-wrap{
         flex-direction: row;
         flex-wrap: nowrap;
     }

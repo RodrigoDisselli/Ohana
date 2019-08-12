@@ -25,22 +25,23 @@
     margin-bottom: 0px;
 }
 
-.input.label-top {
+.input {
     display: flex;
     flex-direction: column;
 }
 
+.input > label {
+    margin: 0px 0px 4px 0px;
+}
+
 .input.label-left {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-.input.label-top > label {
-    margin-bottom: 4px;
-}
-
 .input.label-left > label {
-    margin-right: 8px;
+    margin: 0px 8px 0px 0px;
 }
 
 .input > input {
