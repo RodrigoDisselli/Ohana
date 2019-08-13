@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-.form > .input {
+.form > .input, .form > .checkbox {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -65,4 +65,8 @@
 .input > input.large {
     padding: 12px 0px 12px 8px;
     width: calc(100% - 10px);
+}
+
+.checkbox > label > input[type="checkbox"] {
+    margin: 3px 4px 3px 0px;
 }
