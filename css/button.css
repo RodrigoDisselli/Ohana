@@ -9,6 +9,15 @@ button, button:hover, button:focus , button:after, button:active{
     border-radius: 4px;
 }
 
+button.only-text {
+    background-color: transparent;
+    border: none;
+}
+
+button.secondary {
+    background-color: transparent;
+}
+
 button.small {
     padding: 3px 12px 3px;
 }
