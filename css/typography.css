@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
+    color: rgb(51, 51, 51, 0.85);
 }
 
 .uppercase {
@@ -17,4 +18,22 @@ body{
 
 .bold {
     font-weight: 600;
+}
+
+.text-contrast1{
+    opacity: .85;
+}
+
+.text-contrast2{
+    opacity: .65;
+}
+
+.text-contrast3{
+    opacity: .45;
+}
+
+a {
+    color: #0590FF;
+    text-decoration: underline;
+    opacity: 1;
 }
