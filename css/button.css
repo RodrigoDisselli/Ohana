@@ -23,7 +23,7 @@ button:hover {
 }
 
 button.only-text {
-    background-color: transparent;
+    background-color: #fff;
     color: #0590FF;
     border: none;
     width: auto;
@@ -36,7 +36,7 @@ button.only-text:hover {
 }
 
 button.secondary {
-    background-color: transparent;
+    background-color: #fff;
     color: rgb(51, 51, 51, 0.85);
     border: 1px solid #0590FF;
     color: #0590FF;
