@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/typography.css">
         <link rel="stylesheet" type="text/css" href="css/button.css">
         <link rel="stylesheet" type="text/css" href="css/card.css">
+        <link rel="stylesheet" type="text/css" href="css/select.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
@@ -31,19 +32,26 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="assets/ohana_logo_text.png">
-                        <span class="title">Titulo do card</span>
-                        <div class="description">Lorem ipsum dollor amet</div>
-                        <button class="dashed">Teste</button>
+                        <div class="input">
+                            <label>Select</label>
+                            <select name="select">
+                                <option value="valor1">Valor 1</option> 
+                                <option value="valor2" selected>Valor 2</option>
+                                <option value="valor3">Valor 3</option>
+                            </select>
+                            <span class="label-help">Nome completo</span>
+                        </div>
                     </div>   
                 </div>
-                <div class="col">
+                <div class="col order1 mob-order-end">
                     <div class="card">
-                        <img src="assets/ohana_logo_text.png">
-                        <span class="title">Titulo do card</span>
-                        <div class="description">Lorem ipsum dollor amet</div>
-                        <button class="dashed">Teste</button>
-                    </div>   
+                        <div class="input">
+                            <label class="label-left">Nome</label>
+                            <input type="text">
+                            <span class="label-help">Nome completo</span>
+                        </div>   
+                    </div>  
+                    
                 </div>
             </div>
             <script src="js/Accessibility.js"></script>

@@ -28,16 +28,22 @@
 .input {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .input > label {
     margin: 0px 0px 4px 0px;
 }
 
-.input > .help-label {
+.input > .label-help {
     margin: 4px 0px 0px 0px;
     font-size: .7rem;
     opacity: .65;
+}
+
+.input.label-left > .label-help {
+    margin: 0px 0px 0px 4px;
+    white-space: nowrap;
 }
 
 .input.label-left {
@@ -50,7 +56,7 @@
     margin: 0px 8px 0px 0px;
 }
 
-.input > input, .input > textarea {
+.input > input, .input > textarea, .input > select {
     padding: 8px 0px 8px 8px;
     width: calc(100% - 10px);
     border-radius: 4px;
@@ -63,12 +69,12 @@
 
 }
 
-.input > input.small {
+.input > input.small, .input > select.small {
     padding: 6px 0px 6px 8px;
     width: calc(100% - 10px);
 }
 
-.input > input.large {
+.input > input.large, .input > select.large {
     padding: 12px 0px 12px 8px;
     width: calc(100% - 10px);
 }

@@ -1,0 +1,7 @@
+<svg id="select_arrow_focus" xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8">
+  <g id="Retângulo_11" data-name="Retângulo 11" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+    <rect width="30" height="8" stroke="none"/>
+    <rect x="0.5" y="0.5" width="29" height="7" fill="none"/>
+  </g>
+  <path id="select_arrow" d="M12.241,7.419l-5.4-5.4-5.4,5.4a.845.845,0,0,1-1.2-1.2L6.224.248a.9.9,0,0,1,1.237,0l5.976,5.976a.845.845,0,1,1-1.2,1.2Z" transform="translate(8.108 0.097)" fill="#dcdcdc"/>
+</svg>

@@ -4,7 +4,7 @@
     align-items: center;
     min-width: 250px;
     width: 100%;
-    padding: 40px 20px 20px 20px;
+    padding: 30px 20px 30px 20px;
     background-color: white;
     text-align: center;
     border-radius: 4px;
@@ -22,6 +22,11 @@
 
 .card > img {
     width: 120px;
+}
+
+.card > .input > label,
+ .card > .input > .label-help {
+    text-align: left;
 }
 
 .card > .card-footer {

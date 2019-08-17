@@ -1,0 +1,13 @@
+select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../assets/select_arrow.svg);
+    background-position: center right;
+    background-repeat: no-repeat; 
+ }
+
+select:focus{
+    background-image: url(../assets/select_arrow_focus.svg);
+    transition: .5s;
+ }
