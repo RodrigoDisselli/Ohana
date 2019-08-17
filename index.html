@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="stylesheet" type="text/css" href="css/root.css">
         <link rel="stylesheet" type="text/css" href="css/grid.css">
         <link rel="stylesheet" type="text/css" href="css/form.css">
         <link rel="stylesheet" type="text/css" href="css/typography.css">
@@ -27,7 +28,7 @@
                         <img src="assets/ohana_logo_text.png">
                         <span class="title">Titulo do card</span>
                         <div class="description">Lorem ipsum dollor amet</div>
-                        <button class="dashed">Teste</button>
+                        <button onclick="color('red'); border('20');" class="dashed">Teste</button>
                     </div>   
                 </div>
                 <div class="col">
@@ -47,13 +48,14 @@
                     <div class="card">
                         <div class="input">
                             <label class="label-left">Nome</label>
-                            <input type="text">
+                            <textarea></textarea>
                             <span class="label-help">Nome completo</span>
                         </div>   
                     </div>  
-                    
+                    <button>Botão</button>
                 </div>
             </div>
             <script src="js/Accessibility.js"></script>
+            <script src="js/defineStyle.js"></script>
     </body>
 </html>

@@ -8,8 +8,8 @@ button, button:hover, button:focus , button:after, button:active{
 	cursor: pointer;
     outline: inherit;
     font-weight: 400;
-    border-radius: 4px;
-    background-color: #0590FF;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
     color: #FFF;
 }
 
@@ -24,7 +24,7 @@ button:hover {
 
 button.only-text {
     background-color: #fff;
-    color: #0590FF;
+    color: var(--primary-color);
     border: none;
     width: auto;
     padding: 5px 0px;
@@ -38,20 +38,20 @@ button.only-text:hover {
 button.secondary {
     background-color: #fff;
     color: rgb(51, 51, 51, 0.85);
-    border: 1px solid #0590FF;
-    color: #0590FF;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 button.secondary:hover {
     transition: .35s;
-    background-color: #0590FF;
+    background-color: var(--primary-color);
     color: #fff;
 }
 
 button.dashed {
     background-color: transparent;
-    border: 1px dashed #0590FF;
-    color: #0590FF;
+    border: 1px dashed var(--primary-color);
+    color: var(--primary-color);
 }
 
 button.dashed:hover {
