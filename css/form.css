@@ -33,12 +33,14 @@
 
 .input > label {
     margin: 0px 0px 4px 0px;
+    text-align: left;
 }
 
 .input > .label-help {
     margin: 4px 0px 0px 0px;
     font-size: .7rem;
     opacity: .65;
+    text-align: left;
 }
 
 .input.label-left > .label-help {
