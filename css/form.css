@@ -28,16 +28,24 @@
 .input {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .input > label {
     margin: 0px 0px 4px 0px;
+    text-align: left;
 }
 
-.input > .help-label {
+.input > .label-help {
     margin: 4px 0px 0px 0px;
     font-size: .7rem;
     opacity: .65;
+    text-align: left;
+}
+
+.input.label-left > .label-help {
+    margin: 0px 0px 0px 4px;
+    white-space: nowrap;
 }
 
 .input.label-left {
@@ -60,6 +68,7 @@
 
 .input > textarea {
     min-height: 80px;
+    resize: vertical;
 
 }
 

@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: var(--background-color);
 }
 
 .container {
@@ -23,11 +24,17 @@ body{
 }
 
 .block > .col {
+    align-items: flex-start;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-grow: unset;
+    order: 2;
     width: 100%;
+}
+
+.block > .col.stretch {
+    align-items: stretch;
 }
 
 .block > .col.center {

@@ -1,11 +1,2 @@
-// function addTitleLink(){
-//     links =  document.getElementsByTagName("a");
-
-//     for (var i = 0; i < links.length; i++){
-//         links[i].title = links[i].textContent;
-//     }
-// }
-
-// window.onload = function(){
-//    addTitleLink();
-// }
+// adiciona title automaticamente a todos os links na tela
+Array.from(document.getElementsByTagName("a")).forEach(links => {links.title = links.textContent});

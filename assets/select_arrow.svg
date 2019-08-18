@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8">
+  <g id="select_arrow" transform="translate(-1251 -345.758)">
+    <g id="Retângulo_11" data-name="Retângulo 11" transform="translate(1251 345.758)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="30" height="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="29" height="7" fill="none"/>
+    </g>
+    <path id="select_arrow-2" data-name="select_arrow" d="M6.842,7.666a.843.843,0,0,1-.618-.247L.248,1.443a.845.845,0,0,1,1.2-1.2l5.4,5.4,5.4-5.4a.845.845,0,0,1,1.194,1.2L7.46,7.419a.843.843,0,0,1-.6.248Z" transform="translate(1259.108 345.995)" fill="rgba(0,0,0,0.35)"/>
+  </g>
+</svg>
