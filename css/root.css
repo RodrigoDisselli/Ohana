@@ -1,6 +1,17 @@
 :root{
+    /* primaryColor() */
     --primary-color: #0590FF;
+
+    /* borderRadius() */
     --border-radius: 4px;
+
+    /* backgroundColor() */
     --background-color: #FFFFFF;
+
+    /* textColor() */
     --text-color: #333;
+
+    /* scrollStyle() */
+    --scroll-color: #aaa;
+    --scroll-width: 10px;
 }
