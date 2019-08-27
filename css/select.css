@@ -22,7 +22,7 @@ select:focus{
     width: 100%;
     color: var(--text-color);
     border-radius: 4px;
-    border: 1px solid var(--text-color);
+    border: 1px inset var(--text-color);
     font-family: 'Segoe UI', sans-serif;
  }
 
