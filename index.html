@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="https://ohana.s3.us-east-2.amazonaws.com/minify1.0.css">
         <link rel="stylesheet" type="text/css" href="css/root.css">
         <link rel="stylesheet" type="text/css" href="css/scroll.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/button.css">
 
         <style>
             
@@ -49,18 +51,20 @@
                 </div>
             </div>
             <hr>
+            <div class="block">
+                <div class="col right">
+                    <button class="floating floating-drop large">
+                        <i class="material-icons">send</i>
+                        <ul class="floating-button-droplist">
+                            <li class="floating-button-droplist-item floating-button" onclick="primaryColor('red')">Enviar agora</li>
+                            <li class="floating-button-droplist-item">Agendar</li>
+                        </ul>
+                    </button>
+                </div>
+            </div>
             
-
-
-                    <div class="scrollbar" id="style-default">
-                    <div class="force-overflow"></div>
-                     </div>
-                  
-                  <div class="scrollbar" id="style-1">
-                    <div class="force-overflow"></div>
-                  </div>
-
             <script src="https://ohana.s3.us-east-2.amazonaws.com/js/defineStyle.js"></script>
             <script src="js/defineStyle.js"></script>
+            <script src="js/floatingButton.js"></script>
     </body>
 </html>

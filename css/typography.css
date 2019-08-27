@@ -32,11 +32,19 @@ body{
     opacity: .45;
 }
 
+h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, a.center{
+    text-align: center;
+}
+
 a {
     color: var(--primary-color);
     text-decoration: underline;
     opacity: 1;
     cursor: pointer;
+}
+
+.text-color {
+    color: var(--primary-color);
 }
 
 *::selection {
@@ -46,6 +54,23 @@ a {
 *::-moz-selection {
     background: var(--primary-color);
 }
+
+a::selection {
+    color: white;
+}
+
+a::-moz-selection {
+    color: white;
+}
+
+button::selection {
+    color: white;
+}
+
+button::-moz-selection {
+    color: white;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0px;
