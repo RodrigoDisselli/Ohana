@@ -120,9 +120,8 @@ button.floating > ul.floating-button-droplist > li.floating-button-droplist-item
     border-radius: var(--border-radius);
     box-shadow: 0px 0px 8px rgb(0,0,0,.45);
     transform-origin: left top;
-    /* transform: translate(-120px,-40px); */
     white-space: nowrap;
-    display: flex;
+    display: none;
     opacity: 0;
     transform: scale(1);
 }
@@ -140,15 +139,45 @@ button.floating > ul.floating-button-droplist > li.floating-button-droplist-item
     position: relative;
     border-radius: 100%;
     padding: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: none;
+    transform-origin: left top;
     box-shadow: 0px 0px 8px rgb(0,0,0,.45);
     background-color: var(--background-color);
     color: var(--primary-color);
-    transform: scale(1);
 }
+
+/* CRIA A ANINAÇÃO DE MOVIMENTO NO FLOATING BUTTON */
+
+button.floating > ul.floating-button-droplist > li.floating-button-droplist-item.drop-floating-button.drop-active,
+button.floating > ul.floating-button-droplist > li.floating-button-droplist-item.drop-active  {
+    display: flex;
+    opacity: 1;
+
+    -webkit-animation: drop-active 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: drop-active 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes drop-active {
+    0% {
+      -webkit-transform: translateY(0) translateX(0) scale(0.5);
+              transform: translateY(0) translateX(0) scale(0.5);
+    }
+    100% {
+      -webkit-transform: translateY(-0px) translateX(-50px) scale(1);
+              transform: translateY(-0px) translateX(-50px) scale(1);
+    }
+  }
+  @keyframes drop-active {
+    0% {
+      -webkit-transform: translateY(0) translateX(0) scale(0.5);
+              transform: translateY(0) translateX(0) scale(0.5);
+    }
+    100% {
+      -webkit-transform: translateY(-0px) translateX(-50px) scale(1);
+              transform: translateY(-0px) translateX(-50px) scale(1);
+    }
+  }
+
 
 button.floating > ul.floating-button-droplist > li.floating-button-droplist-item.drop-floating-button > i {
     margin: 0px 0px 0px 0px;

@@ -1,6 +1,8 @@
 select {
     -webkit-appearance: none; 
     -moz-appearance: none;
+    border: none;
+    box-shadow: none;
     appearance: none;
     background-image: url(https://ohana.s3.us-east-2.amazonaws.com/assets/select_arrow.svg);
     background-position: center right;
@@ -13,12 +15,14 @@ select:focus{
  }
 
  .input > select {
+    border: none;
+    box-shadow: none;
     background-color: var(--background-color);
     padding: 8px 0px 8px 8px;
     width: 100%;
     color: var(--text-color);
     border-radius: 4px;
-    border: 1px inset var(--text-color);
+    border: 1px solid var(--text-color);
     font-family: 'Segoe UI', sans-serif;
  }
 

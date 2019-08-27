@@ -18,23 +18,14 @@ function hoverFloatingBuntton() {
 
 function openFloatingDrop() {
     for(var i = 0; i < floatingDropList.length; i++){
-        floatingDropList[i].style.display = "flex";
-        floatingDropList[i].style.opacity = "1";
-        floatingDropList[i].style.transform = "scale(1)";
-        floatingDropList[i].style.transform = "translate(-50px,-15px)";
-        floatingDropList[i].style.transitionTimeFunction = "cubic-bezier(.17,.67,.83,.67)";
-        floatingDropList[i].style.WebkitTransition = "all .3s"; 
+        floatingDropList[i].classList.add("drop-active");
     }
 }
 
 function closeFloatingDrop() {
     document.addEventListener("click", () => {
         for(var i = 0; i < floatingDropList.length; i++){
-            floatingDropList[i].style.opacity = "0";
-            floatingDropList[i].style.transform = "translate(50px, 15px)";
-            floatingDropList[i].style.transform = "scale(1)";
-            floatingDropList[i].style.transitionTimeFunction = "cubic-bezier(.17,.67,.83,.67)";
-            floatingDropList[i].style.WebkitTransition = "all .3s";
+            floatingDropList[i].classList.remove("drop-active");
         }
     });
 }
