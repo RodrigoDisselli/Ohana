@@ -106,7 +106,10 @@ button.floating > ul.floating-button-droplist {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    height: 100%;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
 }
 
 button.floating > ul.floating-button-droplist > li.floating-button-droplist-item {
@@ -121,7 +124,7 @@ button.floating > ul.floating-button-droplist > li.floating-button-droplist-item
     white-space: nowrap;
     display: flex;
     opacity: 0;
-    transform: scale(-1);
+    transform: scale(1);
 }
 
 button.floating > ul.floating-button-droplist > li.floating-button-droplist-item > i {
@@ -144,6 +147,9 @@ button.floating > ul.floating-button-droplist > li.floating-button-droplist-item
     box-shadow: 0px 0px 8px rgb(0,0,0,.45);
     background-color: var(--background-color);
     color: var(--primary-color);
-    transform: scale(-1);
+    transform: scale(1);
 }
 
+button.floating > ul.floating-button-droplist > li.floating-button-droplist-item.drop-floating-button > i {
+    margin: 0px 0px 0px 0px;
+}
