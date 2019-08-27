@@ -18,10 +18,9 @@ function hoverFloatingBuntton() {
 
 function openFloatingDrop() {
     for(var i = 0; i < floatingDropList.length; i++){
-        console.log(i)
         setTimeout((i) => {
             floatingDropList[i].classList.add("drop-active");
-        }, 0, i);
+        }, (i * 45), i);
         
     }
 }
