@@ -3,7 +3,11 @@ var floatingDropList = document.getElementsByClassName("floating-button-droplist
 
 console.log("float-start");
 
-hoverFloatingBuntton();
+window.onload = () => { 
+    hoverFloatingBuntton();
+}
+
+
 
 function hoverFloatingBuntton() {
     for(var i = 0; i < floating.length; i++){

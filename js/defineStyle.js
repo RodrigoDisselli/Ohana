@@ -8,7 +8,7 @@ function borderRadius(border) {
         .setProperty('--border-radius', (border + "px"));
 }
 
-function background(color) {
+function backgroundColor(color) {
     document.documentElement.style
         .setProperty('--background-color', color);
 }
