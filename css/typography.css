@@ -20,6 +20,7 @@ body{
     font-weight: 600;
 }
 
+
 .text-contrast1{
     opacity: .85;
 }
@@ -30,6 +31,10 @@ body{
 
 .text-contrast3{
     opacity: .45;
+}
+
+.text-primary-color {
+    color: var(--primary-color);
 }
 
 h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, a.center{

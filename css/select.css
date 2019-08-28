@@ -20,6 +20,7 @@ select:focus{
     background-color: var(--background-color);
     padding: 8px 0px 8px 8px;
     width: 100%;
+    outline: inherit;
     color: var(--text-color);
     border-radius: 4px;
     border: 1px inset var(--text-color);
@@ -36,6 +37,6 @@ select:focus{
     width: 100%;
 }
 
-select > option:hover {
-    background-color: rgb(0,0,0,.35)
+select > option > * {
+    margin: 8px 0px;
 }
