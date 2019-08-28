@@ -1,0 +1,40 @@
+.title-img {
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+.vertical-center {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content > .title {
+    margin-bottom: 10px;
+}
+
+.content > .subtitle {
+    margin-bottom: 30px;
+}
+
+.content > .input-answer{
+    margin: 14px 0px;
+}
+
+.content.question {
+    text-align: left;
+}
