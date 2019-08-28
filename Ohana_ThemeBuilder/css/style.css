@@ -38,3 +38,9 @@
 .content.question {
     text-align: left;
 }
+
+.input > input { 
+    border-radius: 0px;
+    border: none;
+    border-bottom: 3px inset var(--text-color);
+}
