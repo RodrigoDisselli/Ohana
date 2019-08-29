@@ -23,6 +23,10 @@
     text-align: center;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .content-start {
     max-width: 800px;
     margin: 20px;
@@ -65,6 +69,21 @@
     font-size: 20px;
 }
 
+.card {
+    width: 0%;
+}
+/* 
+.card > .description {
+    margin-bottom: 20px;
+} */
+
 /* #form {
     display: none;
 } */
+
+@media (max-width: 768px) {
+
+    .vertical-center {
+        height: 50vh;
+    }
+}
