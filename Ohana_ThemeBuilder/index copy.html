@@ -7,11 +7,17 @@
     <link rel="icon" type="image/ico" href="https://ohana.s3.us-east-2.amazonaws.com/assets/ohana_logo_title.png" />
     <title>Ohana - Monte seu tema</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://ohana.s3.us-east-2.amazonaws.com/minify2.0.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     
   </head>
-  <body>
+  <body class="theme-build">
+    <h3 class="step-counter medium">0/4</h3>
+    <div class="button-footer">
+      <button class="floating secondary large"><i class="material-icons">keyboard_arrow_up</i></button>
+      <button class="floating large"><i class="material-icons">keyboard_arrow_down</i></button>
+    </div>
     <div id="start" class="vertical-center-start">
         <div class="content-start">
             <img class="title-img" src="https://ohana.s3.us-east-2.amazonaws.com/assets/ohana_logo_text.png">
@@ -34,7 +40,7 @@
             <div class="content question">
               <h2 class="title bold">Escolha a cor primária dos elementos na sua página</h2>
               <div class="input input-answer">
-                <input id="input-primary-color" class="large input-data" type="text" placeholder="Ex: #123456 ou rgb(255, 255, 255)">
+                <input id="input-primary-color" class="large input-data" type="text" placeholder="Ex: #123456 ou rgb(255, 255, 255)" value="#0590FF">
               </div>
             </div>
           </div>
@@ -53,7 +59,7 @@
             <div class="content question">
               <h2 class="title bold">Escolha a cor de fundo dos elementos na sua página</h2>
               <div class="input input-answer">
-                <input class="large input-data" type="text" placeholder="Ex: #123456 ou rgb(255, 255, 255)">
+                <input id="input-background-color" class="large input-data" type="text" placeholder="Ex: #123456 ou rgb(255, 255, 255)" value="#FFFFFF">
               </div>
             </div>
           </div>
@@ -72,7 +78,7 @@
             <div class="content question">
               <h2 class="title bold">Escolha a cor do texto em sua página</h2>
               <div class="input input-answer">
-                <input class="large input-data" type="text" placeholder="Ex: #123456 ou rgb(255, 255, 255)">
+                <input id="input-text-color" class="large input-data" type="text" placeholder="Ex: #123456 ou rgb(255, 255, 255)" value="#333333">
               </div>
             </div>
           </div>
@@ -91,7 +97,7 @@
             <div class="content question">
               <h2 class="title bold">Defina um arredondamento para os cantos dos elementos</h2>
               <div class="input input-answer">
-                <input class="large input-data" type="number" placeholder="Ex: 4">
+                <input id="input-border-radius" class="large input-data" type="number" placeholder="Ex: 4" value="4">
               </div>
             </div>
           </div>
