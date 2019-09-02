@@ -1,3 +1,10 @@
+:root {
+    --primary-color-sample: "#0590FF";
+    --border-radius-sample: "4";
+    --text-color-sample: "#333333";
+    --background-color-sample: "#FFFFFF";
+}
+
 .title-img {
     width: 110px;
     margin-bottom: 20px;
@@ -69,8 +76,16 @@
     font-size: 20px;
 }
 
+.col {
+    position: relative;
+}
+
 .card {
     width: 0%;
+    position: fixed;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .step-counter {
@@ -78,6 +93,7 @@
     position: fixed;
     left: 20px;
     top: 20px;
+    z-index: 10000;
 }
 
 .button-footer {
@@ -92,6 +108,23 @@
     margin: 0px 10px;
 }
 
+.card > button.btn-card {
+    background-color: var(--primary-color-sample);
+    border-radius:  var(--border-radius-sample);
+    transition: all .5s;
+}
+
+.card {
+    background-color: var(--background-color-sample);
+    color: var(--text-color-sample);
+    border-radius: var(--border-radius-sample);
+    transition: all .5s;
+}
+
+.col > .card.mobile-on {
+    display: none;
+}
+
 /* 
 .card > .description {
     margin-bottom: 20px;
@@ -101,9 +134,32 @@
     display: none;
 } */
 
+.display-none {
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .vertical-center {
         height: 50vh;
     }
+
+    .step-counter {
+        left: 10px;
+        top: 10px;
+    }
+
+    .card {
+        width: 0%;
+        position: relative;
+        align-self: center;
+        left: 50%;
+        top: 50%;
+    }
+
+    .col > .card.mobile-on {
+        display: flex;
+    }
+    
+
 }

@@ -16,24 +16,28 @@ var inputBackgroundColor = document.getElementById("input-background-color");
 var inputTextColor = document.getElementById("input-text-color");
 var inputBorderRadius = document.getElementById("input-border-radius");
 
-inputPrimaryColor.addEventListener("keypress", (event) => {
+inputPrimaryColor.addEventListener("keydown", (event) => {
     getKeyPress(event, "color", "input-primary-color", "background-color");
-    setTimeout(() => { primaryColor(inputPrimaryColor.value) }, 650);
+    setTimeout(() => { primaryColorSample(inputPrimaryColor.value) }, 650);
+    markStep(2);
 });
 
-inputBackgroundColor.addEventListener("keypress", (event) => {
+inputBackgroundColor.addEventListener("keydown", (event) => {
     getKeyPress(event, "color", "input-background-color", "text-color");
-    setTimeout(() => { backgroundColor(inputBackgroundColor.value) }, 650);
+    setTimeout(() => { backgroundColorSample(inputBackgroundColor.value) }, 650);
+    markStep(3);
 });
 
-inputTextColor.addEventListener("keypress", (event) => {
+inputTextColor.addEventListener("keydown", (event) => {
     getKeyPress(event, "color", "input-text-color", "border-radius");
-    setTimeout(() => { textColor(inputTextColor.value) }, 650);
+    setTimeout(() => { textColorSample(inputTextColor.value) }, 650);
+    markStep(4);
 });
 
-inputBorderRadius.addEventListener("keypress", (event) => {
+inputBorderRadius.addEventListener("keydown", (event) => {
     getKeyPress(event, "number", "input-border-radius", "border-radius");
-    setTimeout(() => { borderRadius(inputBorderRadius.value) }, 650);
+    setTimeout(() => { borderRadiusSample(inputBorderRadius.value) }, 650);
+    markStep('finish');
 });
 
 function fieldValidation(type, field, target){
