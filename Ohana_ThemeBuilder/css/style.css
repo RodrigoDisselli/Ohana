@@ -119,6 +119,7 @@
     color: var(--text-color-sample);
     border-radius: var(--border-radius-sample);
     transition: all .5s;
+    z-index: 10000;
 }
 
 .col > .card.mobile-on {

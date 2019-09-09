@@ -35,14 +35,14 @@ inputTextColor.addEventListener("keydown", (event) => {
 });
 
 inputBorderRadius.addEventListener("keydown", (event) => {
-    getKeyPress(event, "number", "input-border-radius", "border-radius");
+    getKeyPress(event, "number", "input-border-radius", "code-complete");
     setTimeout(() => { borderRadiusSample(inputBorderRadius.value) }, 650);
-    markStep('finish');
+    markStep(5);
 });
 
 function fieldValidation(type, field, target){
+    var value = document.getElementById(field).value;
     if(type == "color"){
-        var value = document.getElementById(field).value;
         if(String(value).includes("#") || String(value).includes("rgb(")){
             goToScroll(target);
             console.log("valido");

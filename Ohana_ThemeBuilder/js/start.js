@@ -29,7 +29,7 @@ btnStart.addEventListener("click", () => {
         steper.classList.remove("display-none");
         document.getElementById("start").classList.add("display-none");
 
-        steper.textContent = "1/4";
+        steper.textContent = "1/5";
     }, 600)
 
     
@@ -37,7 +37,7 @@ btnStart.addEventListener("click", () => {
 
 function markStep(step){
     if(step != 'finish'){
-        steper.textContent = step + "/4";
+        steper.textContent = step + "/5";
     }else{
         steper.textContent = "";
         
